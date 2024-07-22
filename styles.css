@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*the variables to change the theme */
+    --bg-color: white;
+    --text-color: rgb(186, 19, 97);
+    --primary-color: white;
+    --border-color: black;
+    --card-bg-color: white;
+    --shadow-color: rgb(224, 50, 175);
+}
+
+.container {
+    max-width: 900px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 20px 2px 20px var(--shadow-color);
+    border-radius: 12px;
+}
+
+/* we don´t need to put a dot cause we want to style the whole header */
+header {
+    /* display flex to make it into a row or column arrangement type*/
+    display: flex;
+    justify-content: space-between;
+    /* allows us to align horizontally*/
+    align-items: center;
+
+}
+
+a>img {
+    /* witdth is 100% of 30 pixels - essentially 30px*/
+    max-width: 30px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    /* makes the user know that this is a clicable button*/
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+.dark-mode-button {
+    width: 30px;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #c93695;
+}
